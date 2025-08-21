@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Themezhub">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+    <!-- Custom CSS -->
+    <link rel="icon" href="assets/img/fabicon.png" type="image/x-icon">
+    <link href="assets//css/plugins/animation.css" rel="stylesheet">
+    <link href="assets//css/plugins/bootstrap.min.css" rel="stylesheet">
+    <link href="assets//css/plugins/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="assets//css/plugins/iconfont.css" rel="stylesheet">
+    <link href="assets/css/plugins/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="assets//css/plugins/light-box.css" rel="stylesheet">
+    <link href="assets//css/venobox.css" rel="stylesheet">
+    <link href="assets//css/plugins/line-icons.css" rel="stylesheet">
+    <link href="assets//css/plugins/slick.css" rel="stylesheet">
+    <link href="assets//css/plugins/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="assets/" rel="stylesheet">
+    <link href="assets//css/plugins/themify.css" rel="stylesheet">
+    <link href="assets//css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================================top-navbar-start================================================== -->
+    <div class="top_nav section_red">
+        <div class="container top_nav_container">
+            <div class="top_nav_wrapper">
+                <p>
+                    <marquee class="top_nav_p text_color" loop="-1">Summer Sale For All Swim Suits And Free Express
+                        Delivery - OFF 50%!
+                        <a href="#" class="top_nav_link text_color">SHOW NOW</marquee></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================top-navbar-End================================================== -->
+
+    <!--=============================== Navbar Start========================================================== -->
+
+    <div class="headd-sty header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <div class="headd-sty-wrap d-flex align-items-center justify-content-between py-3">
+                        <div class="headd-sty-left d-flex align-items-center">
+                            <div class="headd-sty-01">
+                                <a class="nav-brand py-0" href="#"
+                                    style="display: inline-block; max-width: 130px; height: 60px;">
+                                    <img src="assets/img/fabicon.png" class="logo" alt="" />
+                                </a>
+                            </div>
+                            <div class="headd-sty-02 ml-3">
+                                <form class="bg-white rounded-md border-bold">
+                                    <div class="input-group">
+                                        <input type="text" id="search_input" class="form-control custom-height b-0 "
+                                            placeholder="Search for products..." />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><button
+                                                    class="text_hover btn bg-white text-dark custom-height rounded px-3 "
+                                                    id="search_btn" type="button"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="headd-sty-last">
+                            <ul class="nav-menu nav-menu-social align-to-right align-items-center d-flex">
+                                <li>
+                                    <div class="call d-flex align-items-center text-left">
+                                        <i class="lni lni-phone fs-xl"></i>
+                                        <span class="small ml-3">Call Us Now:<strong
+                                                class="d-block text-dark fs-md">8768634535435</strong></span>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text_hover" onclick="openCart()">
+                                        <div class="d-flex align-items-center justify-content-between cartCount">
+                                            <i class="fas fa-shopping-basket fs-lg"></i>
+                                            <span id="cartCountDisplay" class="dn-counter theme-bg">12</span>
+
+                                        </div>
+
+                                    </a>
+                                </li>
+                                <li>
+
+                                    <!-- Unauthenticated user registration link -->
+                                    <a href="#" class="text_hover">
+                                        <i class="lni lni-user"></i>
+                                    </a>
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile_nav">
+                            <ul>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#productModal">
+                                        <i class="lni lni-search-alt"></i>
+                                    </a>
+                                </li>
+
+                                <div class="modal fade" id="productModal" tabindex="-1"
+                                    aria-labelledby="productModal_head" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <form id="addCategory">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close" style="font-size: 20px;">
+                                                        <span aria-hidden="true">&times;</span>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="headd-sty-02 ml-3">
+                                                        <form class="bg-white rounded-md border-bold">
+                                                            <div class="input-group">
+                                                                <input type="text"
+                                                                    class="form-control custom-height b-0 "
+                                                                    id="search_inputmb"
+                                                                    placeholder="Search for products..." />
+                                                                <div class="input-group-append">
+                                                                    <div class="input-group-text"><button
+                                                                            class="text_hover btn bg-white text-dark custom-height rounded px-3 "
+                                                                            id="search_btnmb" type="button"><i
+                                                                                class="fas fa-search"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <li>
+                                    <a href="{{ route('customer.login') }}" class="text_hover">
+                                        <i class="lni lni-user"></i>
+                                    </a>
+
+                                </li>
+                                <li>
+                                    <a href="#" class="wishlitcoutnerMb" onclick="openWishlist()">
+                                        <i class="far fa-heart"></i><span
+                                            class="dn-counter wishload bg-success">12</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text_hover" onclick="openCart()">
+                                        <div class="d-flex align-items-center justify-content-between cartCountMb">
+                                            <i class="fas fa-shopping-basket fs-lg"></i>
+                                            <span id="cartCountDisplay" class="dn-counter theme-bg"> 11</span>
+
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headerd section_black  head-style-2">
+        <div class="container">
+            <nav id="navigation" class="navigation navigation-landscape">
+                <div class="nav-header">
+                    <div class="nav-toggle"></div>
+                    <div class="nav-menus-wrapper">
+                        <ul class="nav-menu">
+                            <li><a href="#" class="text_color2 text_hover">Home</a></li>
+                            <li><a href="#" class="text_color2 text_hover">About Us</a></li>
+                            <li class="dropdown">
+                                <a style="cursor: pointer;" class="text_color2 text_hover"
+                                    id="categoryMenu">Category</a>
+                                <ul class="dropdown_menu ">
+                                    <li class="dropdown_submenu">
+                                        <a href="#" class="dropdown_item text_hover">Cartoon</a>
+                                        <ul class="dropdown_menu ">
+                                            <li><a href="#" class="dropdown_item text_hover">Cartoon 1</a></li>
+                                            <li><a href="#" class="dropdown_item text_hover">Cartoon 1</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#" class="text_color2 text_hover">Shop</a></li>
+                            <li><a href="#" class="text_color2 text_hover">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--=============================== Navbar End========================================================== -->
+    <div class="clearfix"></div>
+    <!-- ======================= Top Breadcrubms ======================== -->
+    <div class="gray py-3">
+        <div class="container">
+            <div class="row">
+                <div class="colxl-12 col-lg-12 col-md-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{route('index')}}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{{route('shop')}}">Shop</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Single Category</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= Top Breadcrubms ======================== -->
+
+    <!-- ======================= Product Detail ======================== -->
+    <section class="middle pt-5" id="single_product">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <a href="#" class="my-image-links" data-gall="gallery01"
+                                    style="width: 100%; height: 100%;">
+                                    <img id="main_product_img" class="w-100 img-fluid" src="assets/img/p-1.png"
+                                        data-zoom-image="assets/img/p-1.png" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="my-image-links" data-gall="gallery01"
+                                    style="width: 100%; height: 100%;">
+                                    <img id="main_product_img" class="w-100 img-fluid" src="assets/img/p-1.png"
+                                        data-zoom-image="assets/img/p-1.png" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="my-image-links" data-gall="gallery01"
+                                    style="width: 100%; height: 100%;">
+                                    <img id="main_product_img" class="w-100 img-fluid" src="assets/img/p-1.png"
+                                        data-zoom-image="assets/img/p-1.png" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="my-image-links" data-gall="gallery01"
+                                    style="width: 100%; height: 100%;">
+                                    <img id="main_product_img" class="w-100 img-fluid" src="assets/img/p-1.png"
+                                        data-zoom-image="assets/img/p-1.png" />
+                                </a>
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="assets/img/p-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/p-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/p-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/p-1.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                    <div class="prd_details pl-3">
+
+                        <div class="zoom-preview" style="display:none; background:#f1f1f1;">
+                            <img id="zoomed_img" src="" alt="Zoomed Image" />
+                        </div>
+
+
+                        <div class="prt_01 my-3"><span class="text-light bg-danger rounded px-2 py-1">Mobile</span>
+                        </div>
+
+                        <div class="prt_02 mb-3">
+                            <h2 class="ft-bold mb-1">New Head Phone Collection</h2>
+                            <div class="pro_brand py-3">
+                                <img src="assets/img/shop-logo-1.png" alt="">
+                            </div>
+                            <div class="text-left">
+                                <div class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span class="small">(0 Reviews)</span>
+                                </div>
+                                <div class="elis_rty">
+                                    <span class="ft-medium line-through fs-md mr-2">&#2547; 1231</span>
+
+                                    <span class="ft-bold theme-cl fs-lg mr-2">&#2547;
+                                        23424</span></div>
+                            </div>
+                        </div>
+
+
+                        <form action="#" method="POST">
+
+
+                            <!-- Inventory Status -->
+                            <div class="prt_03 mb-3">
+                                <p class="d-flex align-items-center mb-0 text-dark ft-medium">
+                                    Stock Status:
+                                </p>
+                                <div id="stock_status">
+
+                                    <span class="badge badge-success">In Stock</span>
+
+                                </div>
+                            </div>
+
+
+                            <!-- Color Selection -->
+                            <div class="prt_04 mb-2">
+                                <p class="d-flex align-items-center mb-0 text-dark ft-medium">Color:</p>
+                                <div class="text-left d-flex">
+                                    <div class="form-check form-option form-check-inline mb-1">
+                                        <input data-product_id="1" class="form-check-input color_size" type="radio"
+                                            name="color_id" id="white1" value="1">
+                                        <label class="form-option-label rounded-circle" for="white1">
+                                            <span class="form-option-color rounded-circle"
+                                                style="background: red"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quantity and Submit Buttons -->
+                            <div class="prt_05 mb-4 mt-3">
+                                <div class="form-row mb-7">
+                                    <div class="col-12 col-lg-7 d-flex align-items-center mb-3">
+                                        <label class="mr-3 mb-0">Quantity:</label>
+                                        <div class="qty-selector d-flex">
+                                            <button type="button" class="btn btn-outline-secondary btn-decrease"
+                                                disabled>-</button>
+                                            <input type="text" class="qty-value text-center" value="1">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary btn-increase">+</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 mb-1">
+                                        <button value="1" type="submit" class="btn btn-block web_btn cart_btn mb-2">
+                                            <i class="lni lni-shopping-basket mr-2"></i>Add to Cart
+                                        </button>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <button type="button" id="addwishlist" data-wishlist="1"
+                                            class="btn custom-height web_btn cart_btn btn-block mb-2">
+                                            <i class="lni lni-cart"></i>Buy Now
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================= Product Detail End ======================== -->
+
+    <!-- ======================= Product Description ======================= -->
+    <section class="middle pt-5 pb-5 productDespReview">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12">
+                    <ul class="nav nav-tabs b-0 d-flex align-items-center justify-content-center simple_tab_links mb-4"
+                        id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="description-tab" href="#description" data-toggle="tab"
+                                role="tab" aria-controls="description" aria-selected="true">Description</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" href="#reviews" id="reviews-tab" data-toggle="tab" role="tab"
+                                aria-controls="reviews" aria-selected="false">Reviews</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+
+                        <!-- Description Content -->
+                        <div class="tab-pane fade show active" id="description" role="tabpanel"
+                            aria-labelledby="description-tab">
+                            <div class="description_info">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dignissimos itaque
+                                voluptatem suscipit eligendi maiores ab, repellendus inventore cumque dolorem!
+                            </div>
+                        </div>
+
+                        <!-- Reviews Content -->
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="reviews_info">
+                                <div class="single_rev d-flex align-items-start br-bottom py-3">
+                                    <div class="single_rev_thumb"><img width="50" src="assets/img/google.png" width="90"
+                                            alt="" /></div>
+                                    <div class="single_rev_caption d-flex align-items-start pl-3">
+                                        <div class="single_capt_left">
+                                            <h5 class="mb-0 fs-md ft-medium lh-1">Manush</h5>
+                                            <span class="small">23-232-23</span>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis,
+                                                debitis!</p>
+                                        </div>
+                                        <div class="single_capt_right" style="margin-left: 30px;">
+                                            <div
+                                                class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="reviews_rate">
+
+                                <form class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <h4>Submit Rating</h4>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <div
+                                            class="revie_stars d-flex align-items-center justify-content-between px-2 py-2 gray rounded mb-2 mt-1">
+                                            <div class="srt_013">
+                                                <div class="submit-rating">
+                                                    <input class="rating" id="star-5" type="radio" name="rating"
+                                                        value="5" />
+                                                    <label for="star-5" title="5 stars">
+                                                        <i class="active fa fa-star" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="rating" id="star-4" type="radio" name="rating"
+                                                        value="4" />
+                                                    <label for="star-4" title="4 stars">
+                                                        <i class="active fa fa-star" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="rating" id="star-3" type="radio" name="rating"
+                                                        value="3" />
+                                                    <label for="star-3" title="3 stars">
+                                                        <i class="active fa fa-star" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="rating" id="star-2" type="radio" name="rating"
+                                                        value="2" />
+                                                    <label for="star-2" title="2 stars">
+                                                        <i class="active fa fa-star" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="rating" id="star-1" type="radio" name="rating"
+                                                        value="1" />
+                                                    <label for="star-1" title="1 stars">
+                                                        <i class="active fa fa-star" aria-hidden="true"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="srt_014">
+                                                <input type="hidden" id="rating_val" value="" class="star">
+                                                <input type="hidden" value="1" id="product_id">
+                                                <input type="hidden" id="order_id" value="1" readonly>
+                                                <h6 class="mb-0"><span id="rating">0</span> Star</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="medium text-dark ft-medium">Full Name</label>
+                                            <input readonly value="Abudr" type="text" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="medium text-dark ft-medium">Email Address</label>
+                                            <input readonly value="asdjhk@gmail" type="email" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <label class="medium text-dark ft-medium">Description</label>
+                                            <textarea id="review" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-group m-0">
+                                            <button type="button"
+                                                class="reviewBtn btn btn-white stretched-link hover-black">Submit Review
+                                                <i class="lni lni-arrow-right"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================= Product Description End ==================== -->
+
+    <!-- ======================= Our product Start======================== -->
+    <section class="middle py-5 product_bg" id="product-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <div class="sec_title position-relative text-center">
+                        <h2 class="off_title">Similar Products</h2>
+                        <h3 class="ft-bold pt-3">Similar Products</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Product List -->
+            <div id="product-container">
+                <div class="row no-gutters custom-grid" id="product-list">
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-1.png" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-3.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-4.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-5.webp" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-6.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-3.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-1.png" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-4.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-5.webp" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col-5 col-md-4 col-6">
+                        <div class="card product-card">
+                            <div class="product-top">
+                                <a href="single_product.html">
+                                    <img src="assets/img/p-6.jpg" alt="product1" class="card_img w-100 img-fluid">
+                                </a>
+                                <div class="product-top-icon">
+                                    <i class="left fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="sell-tag section_red text_color2">- 20%</div>
+
+                            </div>
+                            <div class="product-bottom text-center">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="single_product.html">Year Phone 11</a></h5>
+                                <div class="sell-review-icon">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <span>(20)</span>
+                                </div>
+                                <p>&#2547; 300</p>
+                                <del>&#2547;300</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================= Our product end======================== -->
+
+    <!-- ======================= Our product end======================== -->
+    <a id="back2Top" class="top-scroll" title="Back to top"><i class="ti-arrow-up"></i></a>
+
+
+    <!-- ============================ Footer Start ================================== -->
+    <footer id="footer" class="section_black skin-dark-footer style-2">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-5 col-lg-5 col-md-3 col-sm-12">
+                        <div class="footer_widget text_color2 pr-5" style="text-align: justify;">
+                            <div class="footer_logo">
+                                <img src="assets/img/fabicon.png" class="img-footer mb-2" alt="" />
+                            </div>
+
+                            <div class="address mt-2">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, ipsam.
+                            </div>
+                            <div class="address">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item "><a target="_blank" href="#" class="text_color2"><i
+                                                class="lni lni-facebook-filled"></i></a>
+                                    </li>
+                                    <li class="list-inline-item "><a target="_blank" href="#" class="text_color2"><i
+                                                class="lni lni-twitter-filled"></i></a>
+                                    </li>
+                                    <li class="list-inline-item "><a target="_blank" href="#" class="text_color2"><i
+                                                class="lni lni-youtube"></i></a></li>
+                                    <li class="list-inline-item "><a target="_blank" href="#" class="text_color2"><i
+                                                class="lni lni-instagram-filled"></i></a>
+                                    </li>
+                                    <li class="list-inline-item "><a target="_blank" href="#" class="text_color2"><i
+                                                class="lni lni-linkedin-original"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                        <div class="footer_widget mt-2">
+                            <h4 class="widget_title text_color2">Quick Links</h4>
+                            <ul class="footer-menu">
+                                <li><a href="#" class="text_color2">Home</a></li>
+                                <li><a href="#" class="text_color2">About Us</a></li>
+                                <li><a href="#" class="text_color2">Shop</a></li>
+                                <li><a href="#" class="text_color2">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                        <div class="footer_widget mt-2">
+                            <h4 class="widget_title text_color2">Shop</h4>
+                            <ul class="footer-menu">
+
+                                <li><a href="#" class="text_color2">Category</a></li>
+                                <li><a href="#" class="text_color2">Category</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
+                        <div class="footer_widget mt-2">
+                            <h4 class="widget_title text_color2">Company</h4>
+                            <ul class="footer-menu">
+
+                                <li><a href="#" class="text_color2">About</a></li>
+                                <li><a href="#" class="text_color2">About</a></li>
+                                <li><a href="#" class="text_color2">About</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 text-center text_color2">
+                        <p class="mb-0">© 2024 dominy. Designd By <a href="https://dominytech.com"
+                                class="text_color2">Dominytech</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================ Footer End ================================== -->
+
+    <!-- Wishlist -->
+    <div class="w3-ch-sideBar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="Wishlist">
+        <div class="rightMenu-scroll">
+            <div class="d-flex align-items-center justify-content-between slide-head py-3 px-3">
+                <h4 class="cart_heading fs-md ft-medium mb-0">Saved Products</h4>
+                <button onclick="closeWishlist()" class="close_slide"><i class="ti-close"></i></button>
+            </div>
+
+            <div class="right-ch-sideBar reloadwishlist">
+                <div class="cart_select_items py-2 ">
+                    <div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3 ">
+                        <div class="cart_single d-flex align-items-center">
+                            <div class="cart_selected_single_thumb">
+                                <a href="#">
+                                    <img src="assets/img/card.png" width="60" class="img-fluid" alt="" />
+                                </a>
+                            </div>
+                            <div class="cart_single_caption pl-2">
+                                <h4 class="product_title fs-sm ft-medium mb-0 lh-1">klhjk kjhskdfsf</h4>
+
+                            </div>
+                        </div>
+                        <div class="fls_last">
+                            <button type="button" class="close_slide removeWishlist gray" data-id="#">
+                                <i class="ti-close"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_action px-3 py-3">
+                    <div class="form-group">
+                        <a href="#" class="btn d-block full-width btn-dark-light">View Whishlist</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="w3-ch-sideBar w3-bar-block w3-card-2 w3-animate-right" style="display:none;right:0;" id="CartNav">
+        <div class="rightMenu-scroll">
+            <div class="d-flex align-items-center justify-content-between slide-head py-3 px-3">
+                <h4 class="cart_heading fs-md ft-medium mb-0">Products List</h4>
+                <button onclick="closeCart()" class="close_slide"><i class="ti-close"></i></button>
+            </div>
+
+            <div class="right-ch-sideBar autoCitup">
+                <div class="cart_select_items py-2">
+                    <!-- Single Item -->
+                    <div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
+                        <div class="cart_single d-flex align-items-center">
+                            <div class="cart_selected_single_thumb">
+                                <a href="#">
+                                    <img src="assets/img/card.png" width="60" class="img-fluid" alt="" />
+                                </a>
+                            </div>
+                            <div class="cart_single_caption pl-2">
+                                <h4 class="product_title fs-sm ft-medium mb-0 lh-1">Cartoon</h4>
+                                <p class="mb-2"> <span class="text-dark small">red</span></p>
+                                <h4 class="fs-md ft-medium mb-0 lh-1">&#2547;23 x 23</h4>
+                            </div>
+                        </div>
+                        <div class="fls_last">
+                            <button type="button" class="close_slide cart_remove gray" data-cart-id="#">
+                                <i class="ti-close"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- View Cart Button Inside the Loop -->
+                    <div class="cart_action px-3 py-3">
+                        <div class="form-group">
+                            <a href="#" class="btn d-block full-width btn-dark-light">View Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between br-top br-bottom px-3 py-3">
+                    <h6 class="mb-0">Subtotal</h6>
+                    <h3 class="mb-0 ft-medium">&#2547; 897</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/slider-bg.js"></script>
+    <script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/venobox.min.js"></script>
+    <script src="assets/js/smoothproducts.js"></script>
+    <script src="assets/js/snackbar.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jQuery.style.switcher.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+
+
+
+    <script>
+        function openWishlist() {
+            document.getElementById("Wishlist").style.display = "block";
+        }
+
+        function closeWishlist() {
+            document.getElementById("Wishlist").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openCart() {
+            document.getElementById("CartNav").style.display = "block";
+        }
+
+        function closeCart() {
+            document.getElementById("CartNav").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openSearch() {
+            document.getElementById("Search").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("Search").style.display = "none";
+        }
+    </script>
+
+    <script>
+        var swiper = new Swiper(".swiper", {
+            loop: true,
+            freeMode: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            slidesPerView: 2,
+            spaceBetween: 24,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
