@@ -6028,9 +6028,9 @@ footer.skin-dark-footer ul.footer-bottom-social li a:focus {
     --color-withe-1: #ffffff;
     --color-withe-2: #f5f5f5;
     --color-green: #00d656;
-    --sec1: #ee1c47;
+    --sec1: #C2410C;
     --tex: #fff;
-    --sec2: #000;
+    --sec2: #F97316;
     --tex2: #fff;
 }
 
@@ -6241,7 +6241,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:focus {
 
 .product-bottom p {
     display: inline-block;
-    color: red;
+    color: var(--sec1);
 }
 
 .product-bottom i {
@@ -6347,7 +6347,7 @@ footer.skin-dark-footer ul.footer-bottom-social li a:focus {
 
 .sell-text p {
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--sec1);
     padding-right: 5px;
     line-height: 0px;
     padding-bottom: 5px;
